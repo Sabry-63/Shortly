@@ -1,0 +1,426 @@
+/*
+    - Global Sections Style
+    - Navbar Style
+    - Header Style
+    - Subscribe Style
+    - Work Style 
+    - Testmonial Style
+    - Team Style
+    - Contcat
+    - Footer
+*/
+
+/* ========================================
+    Srtart Global Secntios Style ==================*/
+:root {
+    --mainColor: #2bd1d1;
+    --white: #ffffff;
+    --black: #34313c;
+    --gray: #9b989f;
+}
+
+body {
+    text-transform: capitalize;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.bg-section {
+    -webkit-background-repeat: no-repeat;
+    -moz-background-repeat: no-repeat;
+    -o-background-repeat: no-repeat;
+    background-repeat: no-repeat;
+}
+
+.btn-g {
+    background-color: var(--mainColor);
+    color: var(--white) !important;
+    padding: 10px 25px !important;
+    border-radius: 30px;
+    transition: opacity 0.4s;
+    outline: none;
+}
+
+.btn-g:hover {
+    opacity: 0.7;
+}
+
+/* ========================================
+    End Global Secntios Style ==================*/
+
+/* ========================================
+    Start Navbar Style ==================*/
+.navbar .navbar-nav .nav-link {
+    color: var(--gray);
+    transition: color 0.4s;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    color: var(--black);
+}
+
+@media (max-width: 992px) {
+    .navbar-nav {
+        background-color: #3a3055;
+        padding: 20px 15px 0;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    .login-btn-nav {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        padding-bottom: 30px;
+    }
+    .fa-bars {
+        color: var(--gray);
+        font-size: 1.2em;
+    }
+    .login-btn-nav > li a {
+        border-top: 1px solid var(--gray);
+        padding-top: 20px;
+    }
+    .navbar .navbar-nav {
+        text-align: center;
+    }
+    .navbar .navbar-nav .nav-link {
+        color: var(--white);
+    }
+
+    .navbar .navbar-nav .nav-link:hover {
+        color: var(--black);
+    }
+}
+/* ========================================
+    End Navbar Style ==================*/
+
+/* ========================================
+    Start Header Secntios Style ==================*/
+.header {
+    background-image: url("../images/bg/illustration-working.svg");
+    background-position-x: right;
+    background-position-y: center;
+    height: 90vh;
+    position: relative;
+}
+
+.header .content-header {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30%;
+}
+
+.header .content-header .title-header {
+    font-weight: bold;
+    font-size: 4em;
+}
+.header .content-header .desc-header {
+    line-height: 1.8;
+    color: var(--gray);
+}
+
+.header .content-header .btn-header {
+    width: 180px;
+}
+@media (max-width: 992px) {
+    .header {
+        background-position: center;
+    }
+
+    .header .content-header {
+        position: absolute;
+        top: 100%;
+        width: 100%;
+    }
+
+    .header .content-header .desc-header,
+    .content-header-sm .desc-header {
+        line-height: 1.8;
+        color: var(--gray);
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .header .content-header .btn-header {
+        width: auto;
+    }
+}
+/* ========================================
+    End Header Secntios Style ==================*/
+
+/* ========================================
+    Start Search Secntios Style ==================*/
+.search {
+    background-color: #f0f1f6;
+}
+
+.search .content-search {
+    position: relative;
+    top: -100px;
+}
+
+.search form {
+    background-image: linear-gradient(
+            rgba(58, 48, 83, 0.8),
+            rgba(58, 48, 83, 0.8)
+        ),
+        url("../images/bg/bg-shorten-desktop.svg");
+    padding: 35px;
+    position: relative;
+    border-radius: 7px;
+}
+
+.search form input {
+    width: 80%;
+    padding: 0 15px;
+    outline-color: #f56366;
+    border: 1px solid #f56366;
+    border-radius: 5px;
+    margin-right: 20px;
+    height: 43px;
+}
+
+.search form input::placeholder {
+    color: #f56366;
+}
+
+.search .btn-search {
+    border-radius: 8px;
+}
+
+.search form .search-msg {
+    position: absolute;
+    color: #f56366;
+    left: 30px;
+    bottom: 10px;
+    font-style: italic;
+}
+
+.search .copy-link {
+    align-items: center;
+    background-color: var(--white);
+    padding: 20px;
+    margin: 20px 0;
+    font-weight: bold;
+    font-size: 1.3em;
+    border-radius: 7px;
+}
+
+.search .copy-link .box-copy-link {
+    margin-left: auto;
+}
+
+.search .copy-link .box-copy-link .new-link {
+    color: var(--mainColor);
+}
+
+.copied {
+    background-color: #3a3053;
+}
+@media (max-width: 992px) {
+    .search form input,
+    .search .btn-search {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .search .copy-link {
+        font-size: 1em;
+    }
+
+    .search .copy-link .box-copy-link .new-link {
+        margin: 10px 0;
+        display: block;
+        border-top: 1px solid var(--gray);
+    }
+}
+/* ========================================
+    End Search Secntios Style ==================*/
+
+/* ========================================
+    Start Statistcs Secntios Style ==================*/
+.statistcs {
+    background-color: #f0f1f6;
+    padding-bottom: 200px;
+}
+.statistcs .content-statistcs-boxs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+}
+.statistcs .content-statistcs-boxs .statistcs-box {
+    background-color: var(--white);
+    position: relative;
+    padding: 60px 20px 10px;
+    height: 280px;
+}
+.statistcs .content-statistcs-boxs .statistcs-box:nth-child(2) {
+    margin-top: 50px;
+}
+.statistcs .content-statistcs-boxs .statistcs-box:nth-child(2)::before,
+.statistcs .content-statistcs-boxs .statistcs-box:nth-child(2)::after {
+    content: "";
+    position: absolute;
+    height: 10px;
+    background-color: var(--mainColor);
+    width: 50px;
+    top: 120px;
+}
+.statistcs .content-statistcs-boxs .statistcs-box:nth-child(2)::before {
+    left: -50px;
+}
+.statistcs .content-statistcs-boxs .statistcs-box:nth-child(2)::after {
+    right: -50px;
+}
+.statistcs .content-statistcs-boxs .statistcs-box:nth-child(3) {
+    margin-top: 110px;
+}
+.statistcs .content-statistcs-boxs .statistcs-box img {
+    position: absolute;
+    border-radius: 50%;
+    background-color: #3a3055;
+    padding: 20px;
+    top: -40px;
+    left: 40px;
+}
+.statistcs .content-statistcs-boxs .statistcs-box h4 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.statistcs .content-statistcs-boxs .statistcs-box p {
+    color: var(--gray);
+}
+@media (max-width: 992px) {
+    .statistcs .content-statistcs-boxs {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .statistcs .content-statistcs-boxs .statistcs-box:nth-child(3) {
+        margin-top: 50px;
+    }
+    .statistcs .content-statistcs-boxs .statistcs-box:nth-child(2)::before,
+    .statistcs .content-statistcs-boxs .statistcs-box:nth-child(2)::after {
+        width: 68px;
+        left: 45.5%;
+        transform: rotate(90deg) translateX(-50%);
+        right: auto;
+    }
+    .statistcs .content-statistcs-boxs .statistcs-box:nth-child(2)::before {
+        top: -40px;
+    }
+    .statistcs .content-statistcs-boxs .statistcs-box:nth-child(2)::after {
+        top: auto;
+        bottom: -72px;
+    }
+    .statistcs .content-statistcs-boxs .statistcs-box img {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+@media (max-width: 767px) {
+    .statistcs .content-statistcs-boxs .statistcs-box:nth-child(2)::before,
+    .statistcs .content-statistcs-boxs .statistcs-box:nth-child(2)::after {
+        width: 68px;
+        left: 41.2%;
+        transform: rotate(90deg) translateX(-50%);
+        right: auto;
+    }
+    .statistcs .content-statistcs-boxs .statistcs-box:nth-child(2)::before {
+        top: -40px;
+    }
+    .statistcs .content-statistcs-boxs .statistcs-box:nth-child(2)::after {
+        top: auto;
+        bottom: -72px;
+    }
+}
+/* ========================================
+    End Statistcs Secntios Style ==================*/
+
+/* ========================================
+    Start Boost Secntios Style ==================*/
+.boost {
+    background-image: linear-gradient(
+            rgba(58, 48, 83, 0.8),
+            rgba(58, 48, 83, 0.8)
+        ),
+        url("../images/bg/bg-boost-desktop.svg");
+    color: var(--white);
+    background-size: cover;
+}
+
+.boost .title-boost {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.boost .btn-boost {
+    width: 180px;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+@media (max-width: 992px) {
+    .boost {
+        background-image: linear-gradient(
+                rgba(58, 48, 83, 0.8),
+                rgba(58, 48, 83, 0.8)
+            ),
+            url("../images/bg/bg-boost-mobile.svg");
+    }
+}
+/* ========================================
+    End Boost Secntios Style ==================*/
+
+/* ========================================
+    Start Footer Secntios Style ==================*/
+footer {
+    background-color: #232027;
+    color: var(--white);
+}
+
+footer .lists-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .list-footer li {
+    margin: 15px 0;
+}
+
+footer .list-footer li a {
+    color: var(--gray);
+    transition: color 0.4s;
+}
+
+footer .list-footer li a:hover {
+    color: var(--mainColor);
+}
+
+footer .sochial-footer i {
+    font-size: 1.6em;
+    margin: 0 15px;
+    transition: color 0.4s;
+    cursor: pointer;
+}
+footer .sochial-footer i:hover {
+    color: var(--mainColor);
+}
+@media (max-width: 992px) {
+    footer {
+        text-align: center;
+    }
+    footer .lists-footer {
+        flex-direction: column;
+    }
+}
+/* ========================================
+    End Footer Secntios Style ==================*/
